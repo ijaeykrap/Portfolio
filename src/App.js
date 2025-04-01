@@ -1,5 +1,6 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import MetaTags from "./Assets/MetaTags";
 
 import Main from "./Main/Main";
 import WebDesign from "./WebDesign/WebDesign";
@@ -47,7 +48,12 @@ function App() {
       ],
     },
   ]);
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <MetaTags />
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;
