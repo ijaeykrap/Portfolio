@@ -7,22 +7,21 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "babel": "^6.23.0",
+    "homepage": ".",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet-async": "^2.0.5",
     "react-router-dom": "^6.25.1",
     "react-scripts": "5.0.1",
-    "react-snap": "^1.23.0",
     "sass": "^1.77.8",
-    "web-vitals": "^2.1.4",
-    "homepage": "."
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postbuild": "react-snap"
+    "postbuild": "react-hydratable"
   },
   "eslintConfig": {
     "extends": [
@@ -43,15 +42,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
-  },
-  "reactSnap": {
-    "include": [
-      "/",
-      "/web-design",
-      "/branding",
-      "/school-works",
-      "/resume"
-    ]
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "react-hydratable": "^1.5.0"
   }
 }
