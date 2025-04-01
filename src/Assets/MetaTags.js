@@ -20,8 +20,8 @@ const MetaTags = () => {
         property="og:description"
         content="Explore my portfolio to see my work 🔭"
       />
-      <meta property="og:url" content="https://portfoliodyeaji.netlify.app" />
       <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://portfoliodyeaji.netlify.app" />
       <meta
         property="og:image"
         content="https://portfoliodyeaji.netlify.app/img/preview.png"
