@@ -1,5 +1,6 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 import Main from "./Main/Main";
 import WebDesign from "./WebDesign/WebDesign";
@@ -48,7 +49,35 @@ function App() {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <Helmet>
+        {/* meta tag */}
+        <meta charset="utf-8" />
+        <meta
+          name="description"
+          content="Explore my portfolio to see my work 🔭"
+        />
+        <meta name="keywords" content="Portfolio, webDevelopment" />
+        <meta name="author" content="Park Yea Ji" />
+
+        {/* open graph */}
+        <meta property="og:title" content="Yeaji's portfolio" />
+        <meta
+          property="og:description"
+          content="Explore my portfolio to see my work 🔭"
+        />
+        <meta property="og:url" content="https://portfoliodyeaji.netlify.app" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content="https://portfoliodyeaji.netlify.app/img/preview.png"
+        />
+      </Helmet>
+
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;
