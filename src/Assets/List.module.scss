@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Steps-Mono";
+  src: url("../../public/font/Steps-Mono.otf") format(otf);
+}
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  margin-top: 70px;
+  background-color: #000;
+  .inner {
+    width: 83.12%;
+    margin: 0 auto;
+
+    .list {
+      margin: 150px 0 200px 0;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 32.33%);
+      /* grid-template-rows: repeat(2, 475px); */
+
+      column-gap: 20px;
+      row-gap: 70px;
+
+      li {
+        &:hover {
+          transform: scale(1.02);
+          transition: all 0.3s;
+        }
+        a {
+          .img {
+            width: 100%;
+            height: 344px;
+            background-size: cover;
+            background-position: center;
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+          .titleArea {
+            color: #fff;
+            width: 100%;
+            height: 131px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            span:first-child {
+              font-family: "Lato", sans-serif;
+              font-weight: 100;
+              font-size: 6rem;
+            }
+            span:last-child {
+              margin-top: 20px;
+              font-size: 1.5rem;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,14 +1,11 @@
-import style from "./Branding.module.scss";
+import style from "../Assets/List.module.css";
 import { Link } from "react-router-dom";
 import { BrandingInfo } from "../Assets/data";
 
 export default function Branding() {
   return (
-    <section className={style.branding}>
+    <section className={style.container}>
       <div className={style.inner}>
-        <div className={style.headArea}>
-          <h3>branding</h3>
-        </div>
         <ul className={style.list}>
           {BrandingInfo.map((b, index) => {
             return (
@@ -21,6 +18,7 @@ export default function Branding() {
                     {b.alt}
                   </div>
                   <div className={style.titleArea}>
+                    <span>0{index + 1}</span>
                     <span>{b.title}</span>
                   </div>
                 </Link>

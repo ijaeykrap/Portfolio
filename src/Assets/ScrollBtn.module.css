@@ -1,5 +1,5 @@
-button {
-  mix-blend-mode: exclusion;
+.top,
+.bottom {
   width: 60px;
   height: 60px;
   background-color: #dbdbdb;
@@ -14,14 +14,17 @@ button {
   z-index: 2;
   transition: all 0.3s;
 }
-button div {
+.top div,
+.bottom div {
   background-image: url("../../public/img/logo-arrow-2.svg");
   height: 33px;
   width: 33px;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #dbdbdb;
 }
-button:hover {
+.top:hover,
+.bottom:hover {
   background-color: #a2a2a2;
   transform: scale(1.1);
 }

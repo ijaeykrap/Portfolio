@@ -1,36 +1,6 @@
 @font-face {
-  font-family: "Anthony";
-  src: url("../../public/font/Anthony.woff") format(woff),
-    url("../../public/font/Anthony.woff2") format(woff2);
-}
-@font-face {
-  font-family: "Picnic";
-  src: url("../../public/font/PicNic-Regular.woff") format(woff),
-    url("../../public/font/PicNic-Regular.woff2") format(woff2);
-}
-@font-face {
-  font-family: "NEXONLv1GothicRegular";
-  src: url("../../public/font/NEXONLv1GothicRegular.ttf") format(ttf);
-}
-@font-face {
   font-family: "Steps-Mono";
   src: url("../../public/font/Steps-Mono.otf") format(otf);
-}
-@font-face {
-  font-family: "Pretendard";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
-  font-weight: normal;
-}
-// font-family: "Noto Sans KR", sans-serif;
-$color1: #ededed;
-$color2: #000;
-$color3: #fff;
-$color4: #d9d9d9;
-$color5: #bdbdbd;
-* {
-  margin: 0;
-  padding: 0;
 }
 .detail {
   width: 100%;
@@ -39,109 +9,118 @@ $color5: #bdbdbd;
     width: 83.12%;
     height: auto;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    gap: 1.5%;
-    padding: 150px 0 200px 0;
-    & > div {
-      width: 49.24%;
-    }
-    .left {
+    padding-top: 100px;
+    .top {
+      width: 100%;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       gap: 50px;
-      .img {
-        width: 100%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: top;
-        text-indent: 100%;
-        white-space: nowrap;
-        overflow: hidden;
+      margin-bottom: 100px;
+      .left {
+        width: 50%;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .right {
+        width: 50%;
+        .titleArea {
+          h4 {
+            font-size: 2rem;
+            text-transform: capitalize;
+            display: inline-block;
+          }
+          .link {
+            display: inline-block;
+            margin-left: 25px;
+            width: 160px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-family: "Steps-Mono";
+            background-color: #fff;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            transition: all 0.3s;
+            color: #000;
+            &:hover {
+              background-color: #8d8d8d;
+              color: #fff;
+            }
+          }
+        }
+
+        p {
+          margin: 50px 0 40px 0;
+          font-size: 1.375rem;
+          line-height: 2.0625rem;
+          word-break: keep-all;
+        }
+        .tool {
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          span {
+            display: inline-block;
+            width: 100px;
+            height: 40px;
+            border-radius: 40px;
+            font-size: 1rem;
+            font-family: "Steps-Mono";
+            text-align: center;
+            line-height: 40px;
+            color: #000;
+          }
+        }
+
+        .listBtn {
+          margin-top: 30px;
+          text-align: right;
+          .list {
+            font-size: 1.3rem;
+            position: relative;
+            &:after {
+              content: "";
+              background-image: url(../../public/img/logo-arrow.svg);
+              width: 25px;
+              height: 20px;
+              background-size: contain;
+              background-position: center;
+              background-repeat: no-repeat;
+              display: block;
+              position: absolute;
+              top: 50%;
+              left: 110%;
+              transform: translateY(-50%);
+              transition: all 0.3s;
+            }
+            &:hover::after {
+              left: 130%;
+            }
+          }
+        }
       }
     }
-    .right {
-      height: 50vh;
-      position: -webkit-sticky;
-      position: sticky;
-      top: 150px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      .titleArea {
-        h4 {
-          font-size: 2rem;
-          font-family: "Noto Sans KR", sans-serif;
-          text-transform: capitalize;
-          display: inline-block;
-        }
-        .link {
-          display: inline-block;
-          margin-left: 25px;
-          width: 169px;
-          height: 45px;
-          line-height: 45px;
-          text-align: center;
-          font-family: "Steps-Mono";
-          border: 1px solid $color2;
-          background-color: $color4;
-          font-size: 1.25rem;
-          border-radius: 50px;
-          transition: all 0.3s;
-          &:hover {
-            background-color: $color5;
-          }
-        }
-      }
-
-      p {
-        margin: 50px 0 40px 0;
-        font-size: 1.625rem;
-        line-height: 2.375rem;
-        word-break: keep-all;
-      }
-      .tool {
+    .bottom {
+      width: 100%;
+      .imgWrapper {
+        width: 80%;
+        margin: 0 auto;
         display: flex;
-        flex-direction: row;
-        gap: 10px;
-        margin-bottom: 80px;
-        span {
-          display: inline-block;
-          width: 142px;
-          height: 58px;
-          border: 1px solid $color2;
-          border-radius: 50px;
-          font-size: 1.25rem;
-          font-family: "Steps-Mono";
-          text-align: center;
-          line-height: 58px;
-        }
-      }
-
-      .listBtn {
-        align-self: flex-end;
-        .list {
-          font-size: 1.25rem;
-          font-family: "NEXONLv1GothicRegular";
-          position: relative;
-          &:after {
-            content: "";
-            background-image: url(../../public/img/logo-arrow.svg);
-            width: 25px;
-            height: 20px;
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-            display: block;
-            position: absolute;
-            top: 50%;
-            left: 110%;
-            transform: translateY(-50%);
-            transition: all 0.3s;
-          }
-          &:hover::after {
-            left: 130%;
-          }
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+        .img {
+          width: 100%;
+          height: auto;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          text-indent: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          object-fit: contain;
         }
       }
     }

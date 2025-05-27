@@ -1,3 +1,10 @@
+export const Menu = [
+  { title: "home", link: "/" },
+  { title: "mobile design", link: "mobile-design" },
+  { title: "web design", link: "web-design" },
+  { title: "branding", link: "branding" },
+];
+
 export const BrandingInfo = [
   {
     title: "2022 WINTER : Le projet",
@@ -18,7 +25,6 @@ export const BrandingInfo = [
       {
         src: "../img/branding-22w.jpg",
         alt: "22winter lookbook",
-        height: 20768,
       },
     ],
   },
@@ -35,7 +41,6 @@ export const BrandingInfo = [
       {
         src: "../img/branding-22s.jpg",
         alt: "22summer lookbook",
-        height: 21856,
       },
     ],
   },
@@ -57,42 +62,34 @@ export const BrandingInfo = [
       {
         src: "../img/branding-story-1.jpg",
         alt: "naos back open flare dress",
-        height: 1398,
       },
       {
         src: "../img/branding-story-2.jpg",
         alt: "summer collection De-light",
-        height: 1398,
       },
       {
         src: "../img/branding-story-3.jpg",
         alt: "2023 spring jacket sale",
-        height: 1398,
       },
       {
         src: "../img/branding-story-4.jpg",
         alt: "2023 spring blouse sale",
-        height: 1398,
       },
       {
         src: "../img/branding-story-5.jpg",
         alt: "2023 spring blouse sale",
-        height: 1398,
       },
       {
         src: "../img/branding-story-6.jpg",
         alt: "lena cashmere handmade long coat",
-        height: 1398,
       },
       {
         src: "../img/branding-story-7.jpg",
         alt: "winter photo collage - brown",
-        height: 1398,
       },
       {
         src: "../img/branding-story-8.jpg",
         alt: "winter photo collage - black",
-        height: 1398,
       },
     ],
   },
@@ -114,37 +111,30 @@ export const BrandingInfo = [
       {
         src: "../img/branding-feed-1.png",
         alt: "2022 spring/summer season off draft",
-        height: 781,
       },
       {
         src: "../img/branding-feed-2.jpg",
         alt: "2022 summer item collection draft",
-        height: 765,
       },
       {
         src: "../img/branding-feed-3.jpg",
         alt: "2022 winter item collection ",
-        height: 262,
       },
       {
         src: "../img/branding-feed-4.jpg",
         alt: "2023 new year sale",
-        height: 786,
       },
       {
         src: "../img/branding-feed-5.jpg",
         alt: "2022 christmas image",
-        height: 786,
       },
       {
         src: "../img/branding-feed-6.jpg",
         alt: "2022 christmas image",
-        height: 786,
       },
       {
         src: "../img/branding-feed-7.jpg",
         alt: "2023 spring feed draft",
-        height: 1608,
       },
     ],
   },
@@ -167,42 +157,31 @@ export const BrandingInfo = [
       {
         src: "../img/branding-handout-1.png",
         alt: "kakaotalk 5% coupon for may",
-        height: 393,
       },
       {
         src: "../img/branding-handout-2.jpg",
         alt: "kakaotalk 5% coupon for april",
-        height: 393,
       },
-      {
-        src: "../img/branding-handout-3.jpg",
-        alt: "sticker draft for loviq black",
-        height: 891,
-      },
+
       {
         src: "../img/branding-handout-4.png",
         alt: "sticker draft for loviq black",
-        height: 805,
       },
       {
         src: "../img/branding-handout-5.png",
         alt: "sticker draft for loviq black",
-        height: 772,
       },
       {
         src: "../img/branding-handout-6.png",
         alt: "refurb item notice",
-        height: 786,
       },
       {
         src: "../img/branding-handout-7.jpg",
         alt: "refurb item notice",
-        height: 1115,
       },
       {
         src: "../img/branding-handout-8.jpg",
         alt: "refurb item notice",
-        height: 1115,
       },
     ],
   },
@@ -221,359 +200,194 @@ export const BrandingInfo = [
       {
         src: "../img/branding-cardnews-1.jpg",
         alt: "카드 뉴스1",
-        height: 786,
       },
       {
         src: "../img/branding-cardnews-2.jpg",
         alt: "카드 뉴스2",
-        height: 786,
       },
       {
         src: "../img/branding-cardnews-3.jpg",
         alt: "카드 뉴스3",
-        height: 786,
       },
       {
         src: "../img/branding-cardnews-4.jpg",
         alt: "카드 뉴스4",
-        height: 786,
       },
       {
         src: "../img/branding-cardnews-5.jpg",
         alt: "카드 뉴스5",
-        height: 786,
       },
       {
         src: "../img/branding-cardnews-6.jpg",
         alt: "카드 뉴스6",
-        height: 786,
       },
       {
         src: "../img/branding-cardnews-7.jpg",
         alt: "카드 뉴스7",
-        height: 786,
       },
       {
         src: "../img/branding-cardnews-8.jpg",
         alt: "카드 뉴스8",
-        height: 786,
       },
     ],
   },
 ];
 
-export const SchoolWorksInfo = [
+export const MobileDesignInfo = [
   {
-    title: "computer embroidery",
-    src: "../img/school-emb-1.jpg",
-    alt: "computer embroidery thumbnail",
-    link: "computer-embroidery",
-    p: "자수 프로그램을 이용하여 용도와 디자인에 맞는 표현 기법을 배우고 더 나아가 시제품을 제작하였습니다.",
+    title: "MVP 프로젝트",
+    src: "../img/mvp-1.jpg",
+    alt: "MVP 프로젝트 표지",
+    link: "mvp",
+    content: [
+      {
+        name: "포우토(PAWTO)",
+        project: "반려동물 증상 기록에 보호자들이 느끼는 어려움 해소",
+        goal: "꾸준한 증상과 이를 활용한 효율적이고 정확한 진료",
+        user: "언제부터 아팠는지 헷갈려 병원만 가면 말문이 막히는 보호자",
+        job: "리서치, 경쟁사 조사, 디자인 시안 제작",
+      },
+    ],
     img: [
       {
-        src: "../img/school-emb-1.jpg",
-        alt: "자수 시제품 이미지",
-        height: 552,
+        src: "../img/mvp-2.jpg",
+        alt: "problem definition process",
       },
       {
-        src: "../img/school-emb-2.jpg",
-        alt: "자수 시제품 도안",
-        height: 563,
+        src: "../img/mvp-3.jpg",
+        alt: "solution",
       },
       {
-        src: "../img/school-emb-3.jpg",
-        alt: "꽃 도안",
-        height: 751,
+        src: "../img/mvp-4.jpg",
+        alt: "persona",
       },
       {
-        src: "../img/school-emb-4.jpg",
-        alt: "자수 시제품 도안",
-        height: 926,
+        src: "../img/mvp-5.jpg",
+        alt: "as-is to-be 1",
       },
       {
-        src: "../img/school-emb-5.jpg",
-        alt: "자수 시제품 도안",
-        height: 828,
+        src: "../img/mvp-6.jpg",
+        alt: "as-is to-be 2",
       },
       {
-        src: "../img/school-emb-6.jpg",
-        alt: "자수 시제품 도안",
-        height: 1006,
+        src: "../img/mvp-7.jpg",
+        alt: "as-is to-be 3",
+      },
+      {
+        src: "../img/mvp-8.jpg",
+        alt: "record",
+      },
+      {
+        src: "../img/mvp-9.jpg",
+        alt: "timeline",
+      },
+      {
+        src: "../img/mvp-10.jpg",
+        alt: "a/b test",
+      },
+      {
+        src: "../img/mvp-11.jpg",
+        alt: "user feedback",
       },
     ],
   },
   {
-    title: "fashion illustration",
-    src: "../img/school-illust-1.jpg",
-    alt: "fashion illustration thumbnail",
-    link: "fashion-illustration",
-    p: "잡지나 패션 브랜드의 화보를 보고 모델의 포즈와 다양한 의상을 그려보며 일러스트를 그리는 자신만의 스타일을 탐구하고 표현력을 기를 수 있었습니다.",
+    title: "UX 개선 프로젝트",
+    src: "../img/ux-1.jpg",
+    alt: "UI 개선 프로젝트 표지",
+    link: "ux-improvement",
+    content: [
+      {
+        name: "맥도날드(McDonald's)",
+        project: "정보가 부족하고 번거로운 기존 UX/UI의 사용성 문제 해결",
+        goal: "사용자가 자신의 취향과 상황에 맞는 선택을 할 수 있는 경험 제공",
+        user: "간편하고 저렴하게 햄버거로 한 끼를 해결하고 싶은 2-30대",
+        job: "리서치, 사용성 테스트 진행, M 오더 화면 개선 ",
+      },
+    ],
     img: [
       {
-        src: "../img/school-illust-1.jpg",
-        alt: "패션 일러스트 01",
-        height: 1036,
+        src: "../img/ux-2.jpg",
+        alt: "setting",
       },
       {
-        src: "../img/school-illust-2.jpg",
-        alt: "패션 일러스트 02",
-        height: 1071,
+        src: "../img/ux-3.jpg",
+        alt: "problem definition process ",
       },
       {
-        src: "../img/school-illust-3.jpg",
-        alt: "패션 일러스트 03",
-        height: 1076,
+        src: "../img/ux-4.jpg",
+        alt: "improvement",
       },
       {
-        src: "../img/school-illust-4.jpg",
-        alt: "패션 일러스트 04",
-        height: 1075,
+        src: "../img/ux-5.jpg",
+        alt: "as-is to-be 1",
       },
       {
-        src: "../img/school-illust-5.jpg",
-        alt: "패션 일러스트 05",
-        height: 1024,
+        src: "../img/ux-6.jpg",
+        alt: "as-is to-be 2",
       },
       {
-        src: "../img/school-illust-6.jpg",
-        alt: "패션 일러스트 06",
-        height: 1057,
+        src: "../img/ux-7.jpg",
+        alt: "as-is to-be 3",
       },
       {
-        src: "../img/school-illust-7.jpg",
-        alt: "패션 일러스트 07",
-        height: 1099,
+        src: "../img/ux-8.jpg",
+        alt: "as-is to-be 4",
+      },
+      {
+        src: "../img/ux-9.jpg",
+        alt: "user flow",
       },
     ],
   },
-  {
-    title: "graduation work",
-    src: "../img/school-grad-1.jpg",
-    alt: "graduation work thumbnail",
-    link: "graduation-work",
-    p: "'모험을 떠나는 강인한 소녀'라는 아이디어에서 시작하여 컨셉을 발전시키고 졸업작품으로 의상을 제작하였습니다.",
-    img: [
-      {
-        src: "../img/school-grad-1.jpg",
-        alt: "졸업작품 이미지 01",
-        height: 1185,
-      },
-      {
-        src: "../img/school-grad-2.jpg",
-        alt: "졸업작품 이미지 02",
-        height: 1130,
-      },
-      {
-        src: "../img/school-grad-3.jpg",
-        alt: "졸업작품 이미지 03",
-        height: 1030,
-      },
-      {
-        src: "../img/school-grad-4.jpg",
-        alt: "졸업작품 이미지 04",
-        height: 1140,
-      },
-      {
-        src: "../img/school-grad-5.jpg",
-        alt: "졸업작품 이미지 05",
-        height: 1062,
-      },
-    ],
-  },
-  {
-    title: "expression technique",
-    src: "../img/school-technique-1.jpg",
-    alt: "expression technique thumbnail",
-    link: "expression-technique",
-    p: "종이와 원단 위에 원하는 디자인을 표현하기 위해 다양한 재료와 기법들을 시도함으로써 적절한 표현기법을 선택하고 실행하는 방법에 대해 배웠습니다.",
-    img: [
-      {
-        src: "../img/school-technique-1.jpg",
-        alt: "표현 기법 01",
-        height: 521,
-      },
-      {
-        src: "../img/school-technique-2.jpg",
-        alt: "표현 기법 02",
-        height: 1080,
-      },
-      {
-        src: "../img/school-technique-3.jpg",
-        alt: "표현 기법 03",
-        height: 800,
-      },
-      {
-        src: "../img/school-technique-4.jpg",
-        alt: "표현 기법 04",
-        height: 1089,
-      },
-      {
-        src: "../img/school-technique-5.jpg",
-        alt: "표현 기법 05",
-        height: 800,
-      },
-      {
-        src: "../img/school-technique-6.jpg",
-        alt: "표현 기법 06",
-        height: 500,
-      },
-    ],
-  },
-  {
-    title: "pattern making",
-    src: "../img/school-pattern-1.jpg",
-    alt: "pattern making thumbnail",
-    link: "pattern-making",
-    p: "'바캉스를 즐기는 젯셋족(Jet setter)'라는 컨셉을 가지고 위브 프로그램을 사용하여 패턴을 만들고 컨셉에 맞는 아이템들에 맵핑을 해보았습니다.",
-    img: [
-      {
-        src: "../img/school-pattern-1.jpg",
-        alt: "패턴 메이킹 - 가방",
-        height: 524,
-      },
-      {
-        src: "../img/school-pattern-2.jpg",
-        alt: "패턴 메이킹 - 맥시 드레스",
-        height: 524,
-      },
-      {
-        src: "../img/school-pattern-3.jpg",
-        alt: "패턴 메이킹 - 원피스",
-        height: 524,
-      },
-      {
-        src: "../img/school-pattern-4.jpg",
-        alt: "패턴 메이킹 - 스커트",
-        height: 524,
-      },
-      {
-        src: "../img/school-pattern-5.jpg",
-        alt: "패턴 메이킹 - 점프수트",
-        height: 524,
-      },
-    ],
-  },
-  {
-    title: "fashion trend project",
-    src: "../img/school-trend-1.jpg",
-    alt: "fashion trend project thumbnail",
-    link: "fashion-trend-project",
-    p: "매 시즌마다 새로운 디자인을 선보이는 패션 브랜드 중 하나를 선택하여 그 브랜드의 고유한 감성과 패션 산업 내외의 트렌드에 대하여 조사하였고 그 내용들을 토대로 새로운 시즌의 컬렉션을 기획하였습니다.",
-    img: [
-      {
-        src: "../img/school-trend-1.jpg",
-        alt: "전체 컬렉션 사진",
-        height: 262,
-      },
-      {
-        src: "../img/school-trend-2.jpg",
-        alt: "푸퍼자켓 + 스커트",
-        height: 542,
-      },
-      {
-        src: "../img/school-trend-3.jpg",
-        alt: "니트 탑 + 스커트",
-        height: 542,
-      },
-      {
-        src: "../img/school-trend-4.jpg",
-        alt: "컷아웃 드레스",
-        height: 542,
-      },
-      {
-        src: "../img/school-trend-5.jpg",
-        alt: "메탈릭 원피스",
-        height: 542,
-      },
-      {
-        src: "../img/school-trend-6.jpg",
-        alt: "스키 셋업",
-        height: 542,
-      },
-      {
-        src: "../img/school-trend-7.jpg",
-        alt: "스키 오버롤",
-        height: 542,
-      },
-      {
-        src: "../img/school-trend-8.jpg",
-        alt: "트위드 아우터 + 팬츠",
-        height: 542,
-      },
-      {
-        src: "../img/school-trend-9.jpg",
-        alt: "스트랩 원피스",
-        height: 542,
-      },
-      {
-        src: "../img/school-trend-10.jpg",
-        alt: "컨셉맵",
-        height: 542,
-      },
-    ],
-  },
-];
-
-export const Menu = [
-  { title: "home", link: "/" },
-  { title: "web design", link: "web-design" },
-  { title: "branding", link: "/branding" },
-  { title: "school works", link: "school-works" },
-  { title: "résumé", link: "resume" },
 ];
 
 export const WebDesignInfo = [
   {
     title: "Dealim Museum",
     link: "dealim-museum",
-    src: "../img/dealim-thumb.jpg",
+    src: "../img/daelim-1.jpg",
+    alt: "daelim-cover",
     tool: [
       { name: "XD", color: "#EFC7FA" },
       { name: "html5", color: "#FACDC7" },
       { name: "css/scss", color: "#C7EAFA" },
       { name: "react", color: "#80C2F3" },
     ],
-    p: "평소 미술관과 전시회에 관심이 많아 대림미술관 홈페이지를 리디자인하였습니다. 누구나 즐겁게 예술을 경험하고 향유할 수 있는 '일상이 예술이 되는 미술관'이라는 슬로건과 '2030 세대의 문화 핫플레이스'라는 특성에서 출발하여 누구나 원하는 정보를 얻는데 어려움이 없도록 단순하고 명료하지만 모던한 레이아웃으로 구성하였습니다. 또한 다채로운 예술 장르를 다루는 미술관의 성격을 고려하여 홈페이지 사용들이 내용에 더 집중할 수 있도록 화려한 색의 사용을 줄이고 무채색으로 전개하였습니다.",
+
+    p: "‘일상이 예술이 되는 미술관’이라는 슬로건과 ‘2030 세대의 문화 핫플레이스’라는 특성을 바탕으로, 누구나 쉽게 정보를 얻을 수 있도록 단순하고 모던한 레이아웃으로 구성하였으며, 다양한 예술 장르에 집중할 수 있도록 화려한 색 대신 무채색을 활용하였습니다.",
     img: [
       {
-        src: "../img/dealim-1.jpg",
-        alt: "와이어 프레임 - 메인",
-        height: 1429,
+        src: "../img/daelim-2.png",
+        alt: "dealim-main",
       },
       {
-        src: "../img/dealim-2.jpg",
-        alt: "와이어 프레임 - 소개",
-        height: 1230,
+        src: "../img/daelim-3.png",
+        alt: "dealim-about",
       },
       {
-        src: "../img/dealim-3.jpg",
-        alt: "와이어 프레임 - 현재 전시",
-        height: 649,
+        src: "../img/daelim-4.png",
+        alt: "daelim-present-exhibition",
       },
       {
-        src: "../img/dealim-4.jpg",
-        alt: "와이어 프레임 - 과거 전시",
-        height: 663,
+        src: "../img/daelim-5.png",
+        alt: "daelim-past-exhibition",
       },
       {
-        src: "../img/dealim-5.jpg",
-        alt: "와이어 프레임 - 현재 프로그램",
-        height: 529,
+        src: "../img/daelim-6.png",
+        alt: "daelim-program",
       },
       {
-        src: "../img/dealim-6.jpg",
-        alt: "와이어 프레임 - 과거 프로그램",
-        height: 493,
+        src: "../img/daelim-7.png",
+        alt: "daelim-shop-main",
       },
       {
-        src: "../img/dealim-7.jpg",
-        alt: "와이어 프레임 - 샵 메인",
-        height: 731,
+        src: "../img/daelim-8.png",
+        alt: "daelim-shop-list",
       },
       {
-        src: "../img/dealim-8.jpg",
-        alt: "와이어 프레임 - 샵 목록",
-        height: 773,
+        src: "../img/daelim-9.png",
+        alt: "daelim-assets",
       },
     ],
     move: "https://dealim.netlify.app/",
@@ -589,47 +403,35 @@ export const WebDesignInfo = [
       { name: "css/scss", color: "#C7EAFA" },
       { name: "react", color: "#80C2F3" },
     ],
-    p: "웹디자인, 브랜딩, 이력서 등 여러 주제의 내용들을 한눈에 보기 쉽고 이후 추가 혹은 제거가 용이하도록 목록형으로 정리하였습니다. 다양한 작업물들을 방해요소 없이 효과적으로 선보이기 위해 무채색을 주조색으로 전체적인 톤을 잡아주었고 곳곳에 프로그램의 시그니쳐 컬러들을 강조색으로 사용하였습니다.",
+    p: "웹디자인, 브랜딩 등 다양한 주제를 한눈에 보기 쉽고 수정이 용이하도록 목록형으로 구성하였으며, 작업물에 집중할 수 있도록 무채색을 주조색으로 사용하고 프로그램의 시그니처 컬러로 포인트를 주었습니다.",
     img: [
       {
         src: "../img/portfolio-1.jpg",
         alt: "와이어 프레임 - 메인",
-        height: 443,
       },
       {
         src: "../img/portfolio-2.jpg",
         alt: "와이어 프레임 - 리스트1",
-        height: 792,
       },
       {
         src: "../img/portfolio-3.jpg",
         alt: "와이어 프레임 - 리스트2",
-        height: 877,
       },
       {
         src: "../img/portfolio-4.jpg",
         alt: "와이어 프레임 - 이력서",
-        height: 593,
       },
       {
         src: "../img/portfolio-5.jpg",
         alt: "와이어 프레임 - 상세 페이지1",
-        height: 1120,
       },
       {
         src: "../img/portfolio-6.jpg",
         alt: "와이어 프레임 - 상세 페이지2",
-        height: 979,
       },
       {
         src: "../img/portfolio-7.jpg",
         alt: "와이어 프레임 - 상세 내용",
-        height: 442,
-      },
-      {
-        src: "../img/portfolio-8.jpg",
-        alt: "와이어 프레임 - 컴포넌트",
-        height: 400,
       },
     ],
   },
@@ -637,20 +439,20 @@ export const WebDesignInfo = [
 
 export const ResumeInfo = [
   {
-    title: "about",
     content: ["Name : 박예지", "E-mail : dkswpffk6985@naver.com"],
   },
 
   {
     title: "education",
     content: [
-      "2017.03~2019.02 한양여자대학교 섬유패션디자인과",
-      "2019.03~2022.02 한양여자대학교 패션디자인학과",
+      { year: "2017.03 - 2019.02", text: "한양여자대학교 섬유패션디자인과" },
+      { year: "2019.03 - 2022.02", text: "한양여자대학교 패션디자인학과" },
+      { year: "2025.01 - 2025.05", text: "내일배움캠프 UIUX 코스" },
     ],
   },
   {
     title: "experience",
-    content: ["2022.05~2023.06", "LOVIQ"],
+    content: [{ year: "2022.05 - 2023.06", text: "LOVIQ 사원" }],
   },
   {
     title: "skill",

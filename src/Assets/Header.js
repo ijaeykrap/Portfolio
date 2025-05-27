@@ -1,6 +1,7 @@
 import style from "./Header.module.scss";
 import { NavLink } from "react-router-dom";
 import { Menu } from "./data";
+
 export default function Header() {
   return (
     <header>

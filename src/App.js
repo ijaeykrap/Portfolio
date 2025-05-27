@@ -1,15 +1,13 @@
-import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MetaTags from "./Assets/MetaTags";
 
 import Main from "./Main/Main";
 import WebDesign from "./WebDesign/WebDesign";
 import Branding from "./Branding/Branding";
-import SchoolWorks from "./SchoolWorks/SchoolWorks";
-import Resume from "./Resume/Resume";
+import MobileDesign from "./MobileDesign/MobileDesign";
 
 import BrandingDetail from "./Branding/BrandingDetail";
-import SchoolWorksDetail from "./SchoolWorks/SchoolWorksDetail";
+import MobileDesignDetail from "./MobileDesign/MobileDesignDetail";
 import WebDesignDetail from "./WebDesign/WebDesignDetail";
 
 import ScrollToTop from "./Assets/ScrollRestoration";
@@ -20,7 +18,11 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: [<RootLayout />, <ScrollToTop />],
+      element: (
+        <>
+          <RootLayout />, <ScrollToTop />
+        </>
+      ),
       children: [
         { index: true, element: <Main /> },
         {
@@ -38,20 +40,22 @@ function App() {
           ],
         },
         {
-          path: "school-works",
+          path: "mobile-design",
           children: [
-            { index: true, element: <SchoolWorks /> },
-            { path: ":schoolId", element: <SchoolWorksDetail /> },
+            { index: true, element: <MobileDesign /> },
+            { path: ":mobileId", element: <MobileDesignDetail /> },
           ],
         },
-        { path: "resume", element: <Resume /> },
       ],
     },
   ]);
   return (
     <>
       <MetaTags />
-      <RouterProvider router={router} />
+      <RouterProvider
+        router={router}
+        future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+      />
     </>
   );
 }

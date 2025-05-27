@@ -12,46 +12,48 @@ export default function WebDesignDetail() {
   return (
     <section className={style.detail}>
       <div className={style.container}>
-        <div className={style.left}>
-          {arr.img.map((a, index) => {
-            return (
-              <div
-                key={index}
-                className={style.img}
-                style={{
-                  backgroundImage: `url(${a.src})`,
-                  height: `${a.height}px`,
-                }}
-              >
-                {a.alt}
-              </div>
-            );
-          })}
-        </div>
-
-        <div className={style.right}>
-          <div className={style.titleArea}>
-            <h4>{arr.title}</h4>
-            {arr.move && (
-              <Link to={arr.move} className={style.link} target="_blank">
-                move to site
-              </Link>
-            )}
+        <div className={style.top}>
+          <div className={style.left}>
+            <img src={arr.src} alt={arr.src}></img>
           </div>
-          <p>{arr.p}</p>
-          <div className={style.tool}>
-            {arr.tool.map((t) => {
+          <div className={style.right}>
+            <div className={style.titleArea}>
+              <h4>{arr.title}</h4>
+              {arr.move && (
+                <Link to={arr.move} className={style.link} target="_blank">
+                  move to site
+                </Link>
+              )}
+            </div>
+            <p>{arr.p}</p>
+            <div className={style.tool}>
+              {arr.tool.map((t) => {
+                return (
+                  <span style={{ backgroundColor: `${t.color}` }} key={t.name}>
+                    {t.name}
+                  </span>
+                );
+              })}
+            </div>
+            <div className={style.listBtn}>
+              <Link to="/web-design" className={style.list}>
+                목록으로
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className={style.bottom}>
+          <div className={style.imgWrapper}>
+            {arr.img.map((a, index) => {
               return (
-                <span style={{ backgroundColor: `${t.color}` }} key={t.name}>
-                  {t.name}
-                </span>
+                <img
+                  key={index}
+                  src={a.src}
+                  alt={a.alt}
+                  className={style.img}
+                />
               );
             })}
-          </div>
-          <div className={style.listBtn}>
-            <Link to="/web-design" className={style.list}>
-              목록으로
-            </Link>
           </div>
         </div>
       </div>

@@ -12,20 +12,11 @@ export default function BrandingDetail() {
     <section className={style.detail}>
       <div className={style.container}>
         <div className={style.left}>
-          {arr.img.map((a, index) => {
-            return (
-              <div
-                key={index}
-                className={style.img}
-                style={{
-                  backgroundImage: `url(${a.src})`,
-                  height: `${a.height}px`,
-                }}
-              >
-                {a.alt}
-              </div>
-            );
-          })}
+          <div className={style.imgWrapper}>
+            {arr.img.map((a, index) => {
+              return <img key={index} src={a.src} alt={a.alt}></img>;
+            })}
+          </div>
         </div>
 
         <div className={style.right}>
@@ -45,8 +36,12 @@ export default function BrandingDetail() {
                   </span>
                 );
               })}
+              <div className={style.listBtn}>
+                <Link to="/branding" className={style.list}>
+                  목록으로
+                </Link>
+              </div>
             </div>
-            <Link to="/branding">목록으로</Link>
           </div>
         </div>
       </div>

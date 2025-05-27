@@ -14,15 +14,13 @@ export default function Footer() {
         <div className={style.font}>
           <h3>font</h3>
           <ul>
-            <li>Anthony</li>
-            <li>PicNic</li>
-            <li>NEXON Lv1 Gothic</li>
+            <li>Pretendard</li>
             <li>Steps - Mono</li>
-            <li>Noto Sans KR</li>
+            <li>Lato</li>
           </ul>
         </div>
         <div>
-          <h3>&copy;2024</h3>
+          <h3>&copy;2025</h3>
         </div>
       </div>
     </footer>

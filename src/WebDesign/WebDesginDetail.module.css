@@ -1,29 +1,7 @@
 @font-face {
-  font-family: "Anthony";
-  src: url("../../public/font/Anthony.woff") format(woff), url("../../public/font/Anthony.woff2") format(woff2);
-}
-@font-face {
-  font-family: "Picnic";
-  src: url("../../public/font/PicNic-Regular.woff") format(woff), url("../../public/font/PicNic-Regular.woff2") format(woff2);
-}
-@font-face {
-  font-family: "NEXONLv1GothicRegular";
-  src: url("../../public/font/NEXONLv1GothicRegular.ttf") format(ttf);
-}
-@font-face {
   font-family: "Steps-Mono";
   src: url("../../public/font/Steps-Mono.otf") format(otf);
 }
-@font-face {
-  font-family: "Pretendard";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
-  font-weight: normal;
-}
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .detail {
   width: 100%;
   height: 100%;
@@ -32,91 +10,79 @@
   width: 83.12%;
   height: auto;
   margin: 0 auto;
+  padding-top: 100px;
+}
+.detail .container .top {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 1.5%;
-  padding: 150px 0 200px 0;
-}
-.detail .container > div {
-  width: 49.24%;
-}
-.detail .container .left {
-  display: flex;
-  flex-direction: column;
   gap: 50px;
+  margin-bottom: 100px;
 }
-.detail .container .left .img {
+.detail .container .top .left {
+  width: 50%;
+}
+.detail .container .top .left img {
   width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
+  height: auto;
 }
-.detail .container .right {
-  height: 50vh;
-  position: sticky;
-  top: 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.detail .container .top .right {
+  width: 50%;
 }
-.detail .container .right .titleArea h4 {
+.detail .container .top .right .titleArea h4 {
   font-size: 2rem;
-  font-family: "Noto Sans KR", sans-serif;
   text-transform: capitalize;
   display: inline-block;
 }
-.detail .container .right .titleArea .link {
+.detail .container .top .right .titleArea .link {
   display: inline-block;
   margin-left: 25px;
-  width: 169px;
-  height: 45px;
-  line-height: 45px;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
   font-family: "Steps-Mono";
-  border: 1px solid #000;
-  background-color: #d9d9d9;
-  font-size: 1.25rem;
+  background-color: #fff;
+  font-size: 1.2rem;
   border-radius: 50px;
   transition: all 0.3s;
+  color: #000;
 }
-.detail .container .right .titleArea .link:hover {
-  background-color: #bdbdbd;
+.detail .container .top .right .titleArea .link:hover {
+  background-color: #8d8d8d;
+  color: #fff;
 }
-.detail .container .right p {
+.detail .container .top .right p {
   margin: 50px 0 40px 0;
-  font-size: 1.625rem;
-  line-height: 2.375rem;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
   word-break: keep-all;
 }
-.detail .container .right .tool {
+.detail .container .top .right .tool {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  margin-bottom: 80px;
 }
-.detail .container .right .tool span {
+.detail .container .top .right .tool span {
   display: inline-block;
-  width: 142px;
-  height: 58px;
-  border: 1px solid #000;
-  border-radius: 50px;
-  font-size: 1.25rem;
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+  font-size: 1rem;
   font-family: "Steps-Mono";
   text-align: center;
-  line-height: 58px;
+  line-height: 40px;
+  color: #000;
 }
-.detail .container .right .listBtn {
-  align-self: flex-end;
+.detail .container .top .right .listBtn {
+  margin-top: 30px;
+  text-align: right;
 }
-.detail .container .right .listBtn .list {
-  font-size: 1.25rem;
-  font-family: "NEXONLv1GothicRegular";
+.detail .container .top .right .listBtn .list {
+  font-size: 1.3rem;
   position: relative;
 }
-.detail .container .right .listBtn .list:after {
+.detail .container .top .right .listBtn .list:after {
   content: "";
   background-image: url(../../public/img/logo-arrow.svg);
   width: 25px;
@@ -131,6 +97,28 @@
   transform: translateY(-50%);
   transition: all 0.3s;
 }
-.detail .container .right .listBtn .list:hover::after {
+.detail .container .top .right .listBtn .list:hover::after {
   left: 130%;
+}
+.detail .container .bottom {
+  width: 100%;
+}
+.detail .container .bottom .imgWrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+.detail .container .bottom .imgWrapper .img {
+  width: 100%;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  object-fit: contain;
 }/*# sourceMappingURL=WebDesginDetail.module.css.map */

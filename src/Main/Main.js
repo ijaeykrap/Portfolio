@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { useRef, useEffect } from "react";
+import { ResumeInfo } from "../Assets/data";
 
 import style from "./Main.module.css";
 
@@ -26,35 +26,73 @@ function Main() {
     };
   }, []);
   const ref = useRef([]);
+  console.log(ref);
+  const info = ResumeInfo;
   return (
     <section className={style.home}>
-      <div className={style.inner}>
-        <div className={style.left} ref={(el) => (ref.current[0] = el)}></div>
+      <div className={style.content}>
+        <div className={style.left}>
+          <h1 className={style.title} ref={(el) => (ref.current[0] = el)}>
+            사용자를 생각하며 아이디어를 디자인하고,
+            <br />그 디자인을 구현하는 디자이너입니다.
+          </h1>
+          <div className={style.contact} ref={(el) => (ref.current[1] = el)}>
+            {info[0].content.map((i, index) => {
+              return <span key={index}>{i}</span>;
+            })}
+          </div>
+        </div>
         <div className={style.right}>
-          <div className={style.web} ref={(el) => (ref.current[1] = el)}>
-            <Link to="web-design">
-              <h3>01</h3>
-              <h3>Web design</h3>
-            </Link>
-          </div>
-          <div className={style.branding} ref={(el) => (ref.current[2] = el)}>
-            <Link to="branding">
-              <h3>02</h3>
-              <h3>Branding</h3>
-            </Link>
-          </div>
-          <div className={style.school} ref={(el) => (ref.current[3] = el)}>
-            <Link to="school-works">
-              <h3>03</h3>
-              <h3>School works</h3>
-            </Link>
-          </div>
-          <div className={style.resume} ref={(el) => (ref.current[4] = el)}>
-            <Link to="resume">
-              <h3>04</h3>
-              <h3>Résumé</h3>
-            </Link>
-          </div>
+          {info.map((i, index) => {
+            if (index > 0 && index < 3) {
+              return (
+                <div
+                  key={index}
+                  className={style.item}
+                  ref={(el) => (ref.current[1 + index] = el)}
+                >
+                  <h3 className={style.title}>{i.title}</h3>
+                  <div className={style.line}></div>
+                  <ul>
+                    {i.content.map((content, index) => {
+                      return (
+                        <li key={index}>
+                          <span>{content.year}</span>
+                          <span>{content.text}</span>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              );
+            } else if (index === 3) {
+              return (
+                <div
+                  key={index}
+                  className={style.item}
+                  ref={(el) => (ref.current[1 + index] = el)}
+                >
+                  <h3 className={style.title}>{info[index].title}</h3>
+                  <div className={style.line}></div>
+                  <ul className={style.skillWrapper}>
+                    {info[index].content.map((skill) => {
+                      return (
+                        <li
+                          key={skill.color}
+                          className={style.skill}
+                          style={{ backgroundColor: `${skill.color}` }}
+                        >
+                          {skill.name}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              );
+            } else {
+              return null;
+            }
+          })}
         </div>
       </div>
     </section>
