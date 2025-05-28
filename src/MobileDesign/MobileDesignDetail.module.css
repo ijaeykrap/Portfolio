@@ -11,12 +11,13 @@
   margin-top: 150px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .detail .container .intro .thumbArea {
   width: 50%;
 }
 .detail .container .intro .thumbArea img {
-  width: 90%;
+  width: 100%;
   height: auto;
 }
 .detail .container .intro .textArea h3 {
@@ -26,10 +27,10 @@
 .detail .container .intro .textArea .item {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 60px;
 }
 .detail .container .intro .textArea .item span {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 .detail .container .intro .textArea .line {
   width: 100%;
@@ -43,8 +44,9 @@
 }
 .detail .container .intro .textArea .listBtn .list {
   font-family: "Pretendard";
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   position: relative;
+  margin-right: 30px;
 }
 .detail .container .intro .textArea .listBtn .list:after {
   content: "";

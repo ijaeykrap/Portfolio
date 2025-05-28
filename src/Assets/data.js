@@ -344,8 +344,8 @@ export const MobileDesignInfo = [
 
 export const WebDesignInfo = [
   {
-    title: "Dealim Museum",
-    link: "dealim-museum",
+    title: "Daelim Museum",
+    link: "daelim-museum",
     src: "../img/daelim-1.jpg",
     alt: "daelim-cover",
     tool: [
@@ -393,8 +393,8 @@ export const WebDesignInfo = [
     move: "https://dealim.netlify.app/",
   },
   {
-    title: "Portfolio",
-    src: "../img/portfolio-thumb.jpg",
+    title: "Design Portfolio",
+    src: "../img/portfolio-1.jpg",
     alt: "portfolio thumbnail",
     link: "portfolio",
     tool: [
@@ -403,35 +403,27 @@ export const WebDesignInfo = [
       { name: "css/scss", color: "#C7EAFA" },
       { name: "react", color: "#80C2F3" },
     ],
-    p: "웹디자인, 브랜딩 등 다양한 주제를 한눈에 보기 쉽고 수정이 용이하도록 목록형으로 구성하였으며, 작업물에 집중할 수 있도록 무채색을 주조색으로 사용하고 프로그램의 시그니처 컬러로 포인트를 주었습니다.",
+    p: "웹디자인, 브랜딩 등 다양한 주제를 한눈에 보기 쉽고 수정이 용이하도록 목록형으로 구성하였습니다. 작업물에 집중할 수 있도록 흑백의 무채색을 기본으로 사용하고, 프로그램의 시그니처 컬러를 포인트로 활용했습니다.",
     img: [
       {
-        src: "../img/portfolio-1.jpg",
-        alt: "와이어 프레임 - 메인",
-      },
-      {
         src: "../img/portfolio-2.jpg",
-        alt: "와이어 프레임 - 리스트1",
+        alt: "main",
       },
       {
         src: "../img/portfolio-3.jpg",
-        alt: "와이어 프레임 - 리스트2",
+        alt: "list",
       },
       {
         src: "../img/portfolio-4.jpg",
-        alt: "와이어 프레임 - 이력서",
+        alt: "webDetail",
       },
       {
         src: "../img/portfolio-5.jpg",
-        alt: "와이어 프레임 - 상세 페이지1",
+        alt: "mobileDetail",
       },
       {
         src: "../img/portfolio-6.jpg",
-        alt: "와이어 프레임 - 상세 페이지2",
-      },
-      {
-        src: "../img/portfolio-7.jpg",
-        alt: "와이어 프레임 - 상세 내용",
+        alt: "brandingDetail",
       },
     ],
   },

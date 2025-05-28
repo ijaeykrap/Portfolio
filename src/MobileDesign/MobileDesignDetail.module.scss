@@ -9,10 +9,11 @@
       margin-top: 150px;
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       .thumbArea {
         width: 50%;
         img {
-          width: 90%;
+          width: 100%;
           height: auto;
         }
       }
@@ -24,9 +25,9 @@
         .item {
           display: flex;
           justify-content: space-between;
-          gap: 40px;
+          gap: 60px;
           span {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
           }
         }
         .line {
@@ -40,8 +41,9 @@
           text-align: right;
           .list {
             font-family: "Pretendard";
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             position: relative;
+            margin-right: 30px;
             &:after {
               content: "";
               background-image: url(../../public/img/logo-arrow.svg);

@@ -25,7 +25,6 @@
 }
 .top:hover,
 .bottom:hover {
-  background-color: #a2a2a2;
   transform: scale(1.1);
 }
 

@@ -20,7 +20,8 @@ function App() {
       path: "/",
       element: (
         <>
-          <RootLayout />, <ScrollToTop />
+          <RootLayout />
+          <ScrollToTop />
         </>
       ),
       children: [

@@ -12,11 +12,11 @@ export default function WebDesignDetail() {
   return (
     <section className={style.detail}>
       <div className={style.container}>
-        <div className={style.top}>
-          <div className={style.left}>
+        <div className={style.intro}>
+          <div className={style.thumbArea}>
             <img src={arr.src} alt={arr.src}></img>
           </div>
-          <div className={style.right}>
+          <div className={style.textArea}>
             <div className={style.titleArea}>
               <h4>{arr.title}</h4>
               {arr.move && (

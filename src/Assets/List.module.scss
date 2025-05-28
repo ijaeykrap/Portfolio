@@ -10,12 +10,11 @@
 
 .container {
   width: 100%;
-  margin-top: 70px;
+  height: auto;
   background-color: #000;
   .inner {
     width: 83.12%;
     margin: 0 auto;
-
     .list {
       margin: 150px 0 200px 0;
       width: 100%;
@@ -24,7 +23,7 @@
       grid-template-columns: repeat(3, 32.33%);
       /* grid-template-rows: repeat(2, 475px); */
 
-      column-gap: 20px;
+      column-gap: 1.5%;
       row-gap: 70px;
 
       li {

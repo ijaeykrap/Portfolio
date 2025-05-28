@@ -26,7 +26,6 @@ function Main() {
     };
   }, []);
   const ref = useRef([]);
-  console.log(ref);
   const info = ResumeInfo;
   return (
     <section className={style.home}>

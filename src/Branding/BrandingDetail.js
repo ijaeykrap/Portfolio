@@ -36,11 +36,11 @@ export default function BrandingDetail() {
                   </span>
                 );
               })}
-              <div className={style.listBtn}>
-                <Link to="/branding" className={style.list}>
-                  목록으로
-                </Link>
-              </div>
+            </div>
+            <div className={style.listBtn}>
+              <Link to="/branding" className={style.list}>
+                목록으로
+              </Link>
             </div>
           </div>
         </div>

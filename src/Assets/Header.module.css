@@ -24,7 +24,7 @@ header .inner ul li:hover a {
 }
 header .inner ul li > a {
   font-family: "Steps-Mono";
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   transition: all 0.3s;
   font-weight: 500;
 }
@@ -32,6 +32,6 @@ header .inner ul li > a:hover {
   cursor: pointer;
 }
 header .inner ul li > a.active {
-  font-size: 1.6rem;
+  font-size: 1.625rem;
   text-transform: uppercase;
 }/*# sourceMappingURL=Header.module.css.map */

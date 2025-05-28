@@ -10,31 +10,31 @@
   width: 83.12%;
   height: auto;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 150px;
 }
-.detail .container .top {
+.detail .container .intro {
   width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 50px;
   margin-bottom: 100px;
+  gap: 80px;
 }
-.detail .container .top .left {
+.detail .container .intro .thumbArea {
   width: 50%;
 }
-.detail .container .top .left img {
+.detail .container .intro .thumbArea img {
   width: 100%;
   height: auto;
 }
-.detail .container .top .right {
+.detail .container .intro .textArea {
   width: 50%;
 }
-.detail .container .top .right .titleArea h4 {
+.detail .container .intro .textArea .titleArea h4 {
   font-size: 2rem;
   text-transform: capitalize;
   display: inline-block;
 }
-.detail .container .top .right .titleArea .link {
+.detail .container .intro .textArea .titleArea .link {
   display: inline-block;
   margin-left: 25px;
   width: 160px;
@@ -43,29 +43,29 @@
   text-align: center;
   font-family: "Steps-Mono";
   background-color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   border-radius: 50px;
   transition: all 0.3s;
   color: #000;
 }
-.detail .container .top .right .titleArea .link:hover {
+.detail .container .intro .textArea .titleArea .link:hover {
   background-color: #8d8d8d;
   color: #fff;
 }
-.detail .container .top .right p {
+.detail .container .intro .textArea p {
   margin: 50px 0 40px 0;
-  font-size: 1.375rem;
-  line-height: 2.0625rem;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
   word-break: keep-all;
 }
-.detail .container .top .right .tool {
+.detail .container .intro .textArea .tool {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
-.detail .container .top .right .tool span {
+.detail .container .intro .textArea .tool span {
   display: inline-block;
-  width: 100px;
+  width: 120px;
   height: 40px;
   border-radius: 40px;
   font-size: 1rem;
@@ -74,15 +74,16 @@
   line-height: 40px;
   color: #000;
 }
-.detail .container .top .right .listBtn {
+.detail .container .intro .textArea .listBtn {
   margin-top: 30px;
   text-align: right;
 }
-.detail .container .top .right .listBtn .list {
-  font-size: 1.3rem;
+.detail .container .intro .textArea .listBtn .list {
+  font-size: 1.25rem;
   position: relative;
+  margin-right: 30px;
 }
-.detail .container .top .right .listBtn .list:after {
+.detail .container .intro .textArea .listBtn .list:after {
   content: "";
   background-image: url(../../public/img/logo-arrow.svg);
   width: 25px;
@@ -97,7 +98,7 @@
   transform: translateY(-50%);
   transition: all 0.3s;
 }
-.detail .container .top .right .listBtn .list:hover::after {
+.detail .container .intro .textArea .listBtn .list:hover::after {
   left: 130%;
 }
 .detail .container .bottom {

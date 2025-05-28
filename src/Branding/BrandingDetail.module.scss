@@ -18,6 +18,7 @@
     }
     .left {
       .imgWrapper {
+        margin-top: 80px;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -37,7 +38,7 @@
       height: 50vh;
       position: -webkit-sticky;
       position: sticky;
-      top: 100px;
+      top: 150px;
       .text {
         color: #fff;
         display: flex;
@@ -54,18 +55,18 @@
         .did {
           span {
             display: block;
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             margin-bottom: 3px;
           }
         }
         .tool {
-          margin: 40px 0 80px 0;
+          margin-top: 40px;
           span {
             width: 120px;
             height: 40px;
             border-radius: 40px;
             display: inline-block;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-family: "Steps-Mono";
             text-align: center;
             line-height: 40px;
@@ -75,10 +76,10 @@
         }
       }
       .listBtn {
-        margin: 50px 20px 0 0;
+        margin: 50px 30px 0 0;
         text-align: right;
         .list {
-          font-size: 1.3rem;
+          font-size: 1.25rem;
           position: relative;
           &:after {
             content: "";

@@ -7,8 +7,7 @@ export default function Footer() {
           <h3>Reference</h3>
           <ul>
             <li>loviq</li>
-            <li>dealim museum</li>
-            <li>pinterest</li>
+            <li>daelim museum</li>
           </ul>
         </div>
         <div className={style.font}>
