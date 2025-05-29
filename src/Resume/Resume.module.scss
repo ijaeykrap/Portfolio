@@ -16,17 +16,17 @@
         font-size: 2.75rem;
         margin-bottom: 10px;
       }
+      span {
+        font-size: 1.125rem;
+      }
     }
     .right {
       width: 50%;
-      height: auto;
       display: flex;
       flex-direction: column;
-      justify-content: end;
+      justify-content: start;
       gap: 40px;
       .item {
-        transform: translateY(-40%);
-        transition: all 0.3s;
         display: flex;
         gap: 50px;
 

@@ -19,17 +19,17 @@
   font-size: 2.75rem;
   margin-bottom: 10px;
 }
+.resume .container .left span {
+  font-size: 1.125rem;
+}
 .resume .container .right {
   width: 50%;
-  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: start;
   gap: 40px;
 }
 .resume .container .right .item {
-  transform: translateY(-40%);
-  transition: all 0.3s;
   display: flex;
   gap: 50px;
 }
