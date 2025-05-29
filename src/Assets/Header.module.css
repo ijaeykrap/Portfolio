@@ -17,7 +17,7 @@ header .inner ul {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 header .inner ul li:hover a {
   color: #919191;
@@ -27,11 +27,13 @@ header .inner ul li > a {
   font-size: 1.625rem;
   transition: all 0.3s;
   font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
 }
 header .inner ul li > a:hover {
   cursor: pointer;
 }
 header .inner ul li > a.active {
   font-size: 1.625rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+  color: rgba(255, 255, 255, 0.9);
 }/*# sourceMappingURL=Header.module.css.map */

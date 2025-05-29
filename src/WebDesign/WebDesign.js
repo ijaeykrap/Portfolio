@@ -19,8 +19,11 @@ export default function WebDesign() {
                     {b.alt}
                   </div>
                   <div className={style.titleArea}>
-                    <span>0{index + 1}</span>
-                    <span>{b.title}</span>
+                    <span className={style.title}>0{index + 1}</span>
+                    <div className={style.descrip}>
+                      <span>{b.title}</span>
+                      <span className={style.duration}>{b.duration}</span>
+                    </div>
                   </div>
                 </Link>
               </li>

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { MobileDesignInfo } from "../Assets/data";
-import style from "./MobileDesignDetail.module.css";
+import style from "../Assets/DesignDetail.module.css";
 
 export default function MobileDesignDetail() {
   const params = useParams();
@@ -15,10 +15,17 @@ export default function MobileDesignDetail() {
           <div className={style.thumbArea}>
             <img src={arr.src} alt={arr.alt}></img>
           </div>
-
           <div className={style.textArea}>
-            <h3>{arr.content[0].name}</h3>
+            <div className={style.titleArea}>
+              <h3>{arr.content[0].name}</h3>
+            </div>
+
             <div className={style.itemWrapper}>
+              <div className={style.item}>
+                <span>프로젝트 유형</span>
+                <span>{arr.content[0].type}</span>
+              </div>
+              <div className={style.line}></div>
               <div className={style.item}>
                 <span>프로젝트</span>
                 <span>{arr.content[0].project}</span>

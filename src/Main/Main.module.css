@@ -9,95 +9,41 @@
 }
 .home .content {
   margin: 0 auto;
+  padding: 100px 0 30px 0;
   width: calc(100vw - 200px);
   height: 100%;
-  display: flex;
-}
-.home .content .left {
-  width: 50%;
-  height: 100%;
-  padding: 100px 0 80px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.home .content .left .title {
-  font-size: 2.125rem;
-  line-height: 3.1875rem;
+.home .content .title {
+  font-size: 3.125rem;
+  line-height: 4.6875rem;
   transform: translateX(-30%);
   transition: all 0.3s;
+  font-weight: 900;
 }
-.home .content .left .animate {
+.home .content .animate {
   transform: translateX(0);
 }
-.home .content .left .contact {
-  transform: translateY(-100%);
-  transition: all 0.3s;
+.home .content .bottom {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
-.home .content .left .contact span {
-  font-size: 1.25rem;
-}
-.home .content .left .animate {
-  transform: translateX(0);
-}
-.home .content .right {
-  width: 50%;
-  padding: 100px 0 80px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  gap: 40px;
-}
-.home .content .right .item {
-  transform: translateY(-40%);
-  transition: all 0.3s;
-}
-.home .content .right .item .line {
-  background-color: #fff;
-  width: 100%;
-  height: 1px;
-  margin: 8px 0 8px 0;
-}
-.home .content .right .item .title {
-  font-size: 1.75rem;
-  text-transform: capitalize;
-}
-.home .content .right .item ul {
-  display: flex;
-  flex-direction: column;
-}
-.home .content .right .item ul li {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-.home .content .right .item ul li span {
+.home .content .bottom span {
+  color: rgba(255, 255, 255, 0.7);
   font-size: 1.125rem;
+  transform: translateX(-200%);
 }
-.home .content .right .item .skillWrapper {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  flex-wrap: wrap;
+.home .content .bottom span:first-child {
+  transition: all 0.3s;
 }
-.home .content .right .item .skillWrapper .skill {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: 1rem;
-  color: #000;
-  font-family: "Steps-Mono";
-  width: 120px;
-  height: 40px;
-  border-radius: 50px;
-  line-height: 40px;
-  text-align: center;
+.home .content .bottom span:nth-child(2) {
+  transition: all 0.45s;
 }
-.home .content .right .item .skillWrapper .skill:nth-child(4) {
-  width: 90px;
+.home .content .bottom span:last-child {
+  transition: all 0.55s;
 }
-.home .content .right .animate {
+.home .content .bottom .animate {
   transform: translateX(0);
 }/*# sourceMappingURL=Main.module.css.map */

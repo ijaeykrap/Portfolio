@@ -2,10 +2,11 @@ export const Menu = [
   { title: "home", link: "/" },
   { title: "mobile design", link: "mobile-design" },
   { title: "web design", link: "web-design" },
-  { title: "branding", link: "branding" },
+  { title: "promotion", link: "promotion" },
+  { title: "résumé", link: "resume" },
 ];
 
-export const BrandingInfo = [
+export const PromotionInfo = [
   {
     title: "2022 WINTER : Le projet",
     p: "인스타그램에서 주로 직장인 출근룩으로 태그가 되는 것에서 아이디어를 얻어 자신에게 주어진 일들을 해내는 여성들의 당당한 일상의 모습을 그려내는 것에서부터 컨셉을 전개해나갔습니다.",
@@ -239,6 +240,7 @@ export const MobileDesignInfo = [
     src: "../img/mvp-1.jpg",
     alt: "MVP 프로젝트 표지",
     link: "mvp",
+    duration: "2025.04 - 2025.05",
     content: [
       {
         name: "포우토(PAWTO)",
@@ -246,48 +248,13 @@ export const MobileDesignInfo = [
         goal: "꾸준한 증상과 이를 활용한 효율적이고 정확한 진료",
         user: "언제부터 아팠는지 헷갈려 병원만 가면 말문이 막히는 보호자",
         job: "리서치, 경쟁사 조사, 디자인 시안 제작",
+        type: "팀 프로젝트",
       },
     ],
     img: [
       {
-        src: "../img/mvp-2.jpg",
+        src: "../img/mvp.jpg",
         alt: "problem definition process",
-      },
-      {
-        src: "../img/mvp-3.jpg",
-        alt: "solution",
-      },
-      {
-        src: "../img/mvp-4.jpg",
-        alt: "persona",
-      },
-      {
-        src: "../img/mvp-5.jpg",
-        alt: "as-is to-be 1",
-      },
-      {
-        src: "../img/mvp-6.jpg",
-        alt: "as-is to-be 2",
-      },
-      {
-        src: "../img/mvp-7.jpg",
-        alt: "as-is to-be 3",
-      },
-      {
-        src: "../img/mvp-8.jpg",
-        alt: "record",
-      },
-      {
-        src: "../img/mvp-9.jpg",
-        alt: "timeline",
-      },
-      {
-        src: "../img/mvp-10.jpg",
-        alt: "a/b test",
-      },
-      {
-        src: "../img/mvp-11.jpg",
-        alt: "user feedback",
       },
     ],
   },
@@ -296,6 +263,7 @@ export const MobileDesignInfo = [
     src: "../img/ux-1.jpg",
     alt: "UI 개선 프로젝트 표지",
     link: "ux-improvement",
+    duration: "2025.03",
     content: [
       {
         name: "맥도날드(McDonald's)",
@@ -303,40 +271,13 @@ export const MobileDesignInfo = [
         goal: "사용자가 자신의 취향과 상황에 맞는 선택을 할 수 있는 경험 제공",
         user: "간편하고 저렴하게 햄버거로 한 끼를 해결하고 싶은 2-30대",
         job: "리서치, 사용성 테스트 진행, M 오더 화면 개선 ",
+        type: "팀 프로젝트",
       },
     ],
     img: [
       {
-        src: "../img/ux-2.jpg",
+        src: "../img/ux.jpg",
         alt: "setting",
-      },
-      {
-        src: "../img/ux-3.jpg",
-        alt: "problem definition process ",
-      },
-      {
-        src: "../img/ux-4.jpg",
-        alt: "improvement",
-      },
-      {
-        src: "../img/ux-5.jpg",
-        alt: "as-is to-be 1",
-      },
-      {
-        src: "../img/ux-6.jpg",
-        alt: "as-is to-be 2",
-      },
-      {
-        src: "../img/ux-7.jpg",
-        alt: "as-is to-be 3",
-      },
-      {
-        src: "../img/ux-8.jpg",
-        alt: "as-is to-be 4",
-      },
-      {
-        src: "../img/ux-9.jpg",
-        alt: "user flow",
       },
     ],
   },
@@ -348,84 +289,39 @@ export const WebDesignInfo = [
     link: "daelim-museum",
     src: "../img/daelim-1.jpg",
     alt: "daelim-cover",
+    duration: "2024.03 - 2024.07",
     tool: [
       { name: "XD", color: "#EFC7FA" },
       { name: "html5", color: "#FACDC7" },
       { name: "css/scss", color: "#C7EAFA" },
       { name: "react", color: "#80C2F3" },
     ],
-
-    p: "‘일상이 예술이 되는 미술관’이라는 슬로건과 ‘2030 세대의 문화 핫플레이스’라는 특성을 바탕으로, 누구나 쉽게 정보를 얻을 수 있도록 단순하고 모던한 레이아웃으로 구성하였으며, 다양한 예술 장르에 집중할 수 있도록 화려한 색 대신 무채색을 활용하였습니다.",
+    content: [
+      {
+        name: "대림미술관",
+        project:
+          "전시 부재 시 콘텐츠 공백이 크고, 프로그램 및 멤버쉽 안내가 부족",
+        goal: "전시 유무와 관계없이 미술관의 정체성과 다양한 활동을 효과적으로 전달",
+        direction: "간결하고 명료한 레이아웃과 인터렉션, 정제된 컬러 팔레트",
+        job: "디자인, 퍼블리싱,리액트 개발",
+        type: "개인 프로젝트",
+      },
+    ],
     img: [
       {
-        src: "../img/daelim-2.png",
+        src: "../img/daelim-2.jpg",
         alt: "dealim-main",
       },
       {
-        src: "../img/daelim-3.png",
+        src: "../img/daelim-3.jpg",
         alt: "dealim-about",
       },
       {
-        src: "../img/daelim-4.png",
+        src: "../img/daelim-4.jpg",
         alt: "daelim-present-exhibition",
-      },
-      {
-        src: "../img/daelim-5.png",
-        alt: "daelim-past-exhibition",
-      },
-      {
-        src: "../img/daelim-6.png",
-        alt: "daelim-program",
-      },
-      {
-        src: "../img/daelim-7.png",
-        alt: "daelim-shop-main",
-      },
-      {
-        src: "../img/daelim-8.png",
-        alt: "daelim-shop-list",
-      },
-      {
-        src: "../img/daelim-9.png",
-        alt: "daelim-assets",
       },
     ],
     move: "https://dealim.netlify.app/",
-  },
-  {
-    title: "Design Portfolio",
-    src: "../img/portfolio-1.jpg",
-    alt: "portfolio thumbnail",
-    link: "portfolio",
-    tool: [
-      { name: "figma", color: "#D7FAC7" },
-      { name: "html5", color: "#FACDC7" },
-      { name: "css/scss", color: "#C7EAFA" },
-      { name: "react", color: "#80C2F3" },
-    ],
-    p: "웹디자인, 브랜딩 등 다양한 주제를 한눈에 보기 쉽고 수정이 용이하도록 목록형으로 구성하였습니다. 작업물에 집중할 수 있도록 흑백의 무채색을 기본으로 사용하고, 프로그램의 시그니처 컬러를 포인트로 활용했습니다.",
-    img: [
-      {
-        src: "../img/portfolio-2.jpg",
-        alt: "main",
-      },
-      {
-        src: "../img/portfolio-3.jpg",
-        alt: "list",
-      },
-      {
-        src: "../img/portfolio-4.jpg",
-        alt: "webDetail",
-      },
-      {
-        src: "../img/portfolio-5.jpg",
-        alt: "mobileDetail",
-      },
-      {
-        src: "../img/portfolio-6.jpg",
-        alt: "brandingDetail",
-      },
-    ],
   },
 ];
 
@@ -447,16 +343,22 @@ export const ResumeInfo = [
     content: [{ year: "2022.05 - 2023.06", text: "LOVIQ 사원" }],
   },
   {
+    title: "License",
+    content: [
+      { year: "2024.04", text: "웹디자인 기능사" },
+      { year: "2024.08", text: "GA4" },
+    ],
+  },
+  {
     title: "skill",
     content: [
-      { name: "photoshop", color: "#C7DBFA" },
-      { name: "illustrator", color: "#FAE5C7" },
-      { name: "indesign", color: "#FAC7DC" },
-      { name: "XD", color: "#EFC7FA" },
-      { name: "figma", color: "#D7FAC7" },
-      { name: "html5", color: "#FACDC7" },
-      { name: "css/scss", color: "#C7EAFA" },
-      { name: "react", color: "#80C2F3" },
+      { text: "photoshop", color: "#C7DBFA" },
+      { text: "illustrator", color: "#FAE5C7" },
+      { text: "indesign", color: "#FAC7DC" },
+      { text: "figma", color: "#D7FAC7" },
+      { text: "html5", color: "#FACDC7" },
+      { text: "css/scss", color: "#C7EAFA" },
+      { text: "react", color: "#80C2F3" },
     ],
   },
 ];

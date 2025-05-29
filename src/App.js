@@ -3,8 +3,9 @@ import MetaTags from "./Assets/MetaTags";
 
 import Main from "./Main/Main";
 import WebDesign from "./WebDesign/WebDesign";
-import Branding from "./Branding/Branding";
+import Promotion from "./Branding/Branding";
 import MobileDesign from "./MobileDesign/MobileDesign";
+import Resume from "./Resume/Resume";
 
 import BrandingDetail from "./Branding/BrandingDetail";
 import MobileDesignDetail from "./MobileDesign/MobileDesignDetail";
@@ -34,10 +35,10 @@ function App() {
           ],
         },
         {
-          path: "branding",
+          path: "promotion",
           children: [
-            { index: true, element: <Branding /> },
-            { path: ":brId", element: <BrandingDetail /> },
+            { index: true, element: <Promotion /> },
+            { path: ":promotionId", element: <BrandingDetail /> },
           ],
         },
         {
@@ -46,6 +47,10 @@ function App() {
             { index: true, element: <MobileDesign /> },
             { path: ":mobileId", element: <MobileDesignDetail /> },
           ],
+        },
+        {
+          path: "resume",
+          children: [{ index: true, element: <Resume /> }],
         },
       ],
     },

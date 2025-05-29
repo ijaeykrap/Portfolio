@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Steps-Mono";
+  src: url("../../public/font/Steps-Mono.otf") format(otf);
+}
+.detail {
+  width: 100%;
+  height: 100%;
+}
+.detail .container {
+  width: 83.12%;
+  height: auto;
+  margin: 70px auto 0 auto;
+}
+.detail .container .intro {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 80px;
+}
+.detail .container .intro .thumbArea {
+  width: 50%;
+}
+.detail .container .intro .thumbArea img {
+  width: 100%;
+  height: auto;
+}
+.detail .container .intro .textArea {
+  width: 50%;
+}
+.detail .container .intro .textArea .titleArea {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.detail .container .intro .textArea .titleArea h3 {
+  font-size: 2rem;
+}
+.detail .container .intro .textArea .titleArea .link {
+  font-family: "Steps-Mono";
+  font-size: 1.125rem;
+  cursor: pointer;
+  width: 140px;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50px;
+  background-color: #fff;
+  color: #000;
+}
+.detail .container .intro .textArea .titleArea .link:hover {
+  background-color: #747474;
+  color: #fff;
+}
+.detail .container .intro .textArea .item {
+  display: flex;
+  justify-content: space-between;
+}
+.detail .container .intro .textArea .item span {
+  font-size: 1.125rem;
+}
+.detail .container .intro .textArea .line {
+  width: 100%;
+  background-color: #fff;
+  height: 0.7px;
+  margin: 8px 0 8px 0;
+}
+.detail .container .intro .textArea .listBtn {
+  margin-top: 30px;
+  text-align: right;
+}
+.detail .container .intro .textArea .listBtn .list {
+  font-family: "Pretendard";
+  font-size: 1.25rem;
+  position: relative;
+  margin-right: 30px;
+}
+.detail .container .intro .textArea .listBtn .list:after {
+  content: "";
+  background-image: url(../../public/img/logo-arrow.svg);
+  width: 25px;
+  height: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+}
+.detail .container .intro .textArea .listBtn .list:hover::after {
+  left: 130%;
+}
+.detail .container .imgWrapper {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.detail .container .imgWrapper .img {
+  width: 100%;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  object-fit: contain;
+}/*# sourceMappingURL=DesignDetail.module.css.map */

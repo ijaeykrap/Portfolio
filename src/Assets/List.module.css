@@ -48,13 +48,24 @@
   align-items: flex-start;
   justify-content: space-between;
 }
-.container .inner .list li a .titleArea span:first-child {
+.container .inner .list li a .titleArea .title {
   font-family: "Lato", sans-serif;
   font-weight: 100;
   font-size: 6rem;
 }
-.container .inner .list li a .titleArea span:last-child {
-  margin-top: 20px;
+.container .inner .list li a .titleArea .descrip {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 20px 10px 0 0;
+}
+.container .inner .list li a .titleArea .descrip span {
   font-size: 1.5rem;
-  margin-left: 10px;
+  font-weight: 500;
+}
+.container .inner .list li a .titleArea .descrip .duration {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 100;
 }/*# sourceMappingURL=List.module.css.map */

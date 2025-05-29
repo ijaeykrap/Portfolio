@@ -1,13 +1,13 @@
 import { useParams } from "react-router-dom";
-import { BrandingInfo } from "../Assets/data";
+import { PromotionInfo } from "../Assets/data";
 import { Link } from "react-router-dom";
 
 import style from "./BrandingDetail.module.css";
 export default function BrandingDetail() {
   const params = useParams();
-  let id = params.brId;
-  const index = BrandingInfo.findIndex((i) => i.link === id);
-  const arr = BrandingInfo[index];
+  let id = params.promotionId;
+  const index = PromotionInfo.findIndex((i) => i.link === id);
+  const arr = PromotionInfo[index];
   return (
     <section className={style.detail}>
       <div className={style.container}>
@@ -38,7 +38,7 @@ export default function BrandingDetail() {
               })}
             </div>
             <div className={style.listBtn}>
-              <Link to="/branding" className={style.list}>
+              <Link to="/promotion" className={style.list}>
                 목록으로
               </Link>
             </div>

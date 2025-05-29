@@ -1,0 +1,54 @@
+.resume {
+  margin-top: 70px;
+  width: 100%;
+  height: 100%;
+}
+.resume .container {
+  width: calc(100vw - 200px);
+  height: calc(100vh - 170px);
+  margin: 0 auto;
+  padding: 100px 0 30px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.resume .container .left {
+  width: 30%;
+}
+.resume .container .left h3 {
+  font-size: 2.75rem;
+  margin-bottom: 10px;
+}
+.resume .container .right {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 40px;
+}
+.resume .container .right .item {
+  transform: translateY(-40%);
+  transition: all 0.3s;
+  display: flex;
+  gap: 50px;
+}
+.resume .container .right .item .title {
+  font-size: 1.75rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  width: 140px;
+}
+.resume .container .right .item ul {
+  display: flex;
+  flex-direction: column;
+}
+.resume .container .right .item ul li {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.resume .container .right .item ul li span {
+  font-size: 1.125rem;
+  font-weight: 100;
+}/*# sourceMappingURL=Resume.module.css.map */

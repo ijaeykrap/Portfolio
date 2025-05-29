@@ -1,13 +1,13 @@
 import style from "../Assets/List.module.css";
 import { Link } from "react-router-dom";
-import { BrandingInfo } from "../Assets/data";
+import { PromotionInfo } from "../Assets/data";
 
-export default function Branding() {
+export default function Promotion() {
   return (
     <section className={style.container}>
       <div className={style.inner}>
         <ul className={style.list}>
-          {BrandingInfo.map((b, index) => {
+          {PromotionInfo.map((b, index) => {
             return (
               <li key={index}>
                 <Link to={b.link}>
@@ -18,8 +18,10 @@ export default function Branding() {
                     {b.alt}
                   </div>
                   <div className={style.titleArea}>
-                    <span>0{index + 1}</span>
-                    <span>{b.title}</span>
+                    <span className={style.title}>0{index + 1}</span>
+                    <div className={style.descrip}>
+                      <span>{b.title}</span>
+                    </div>
                   </div>
                 </Link>
               </li>
