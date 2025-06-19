@@ -241,6 +241,8 @@ export const MobileDesignInfo = [
     alt: "MVP 프로젝트 표지",
     link: "mvp",
     duration: "2025.04 - 2025.05",
+    figma:
+      "https://www.figma.com/design/JtDnyE0zVu3hb5DSiIhqer/Untitled?node-id=0-1&p=f",
     content: [
       {
         name: "포우토(PAWTO)",
@@ -261,9 +263,11 @@ export const MobileDesignInfo = [
   {
     title: "UX 개선 프로젝트",
     src: "../img/ux-1.jpg",
-    alt: "UI 개선 프로젝트 표지",
+    alt: "UX 개선 프로젝트 표지",
     link: "ux-improvement",
     duration: "2025.03",
+    figma:
+      "https://www.figma.com/design/JtDnyE0zVu3hb5DSiIhqer/Untitled?node-id=4-645&p=f",
     content: [
       {
         name: "맥도날드(McDonald's)",
@@ -322,6 +326,7 @@ export const WebDesignInfo = [
       },
     ],
     move: "https://dealim.netlify.app/",
+    github: "https://github.com/ijaeykrap/museum",
   },
 ];
 
@@ -352,13 +357,13 @@ export const ResumeInfo = [
   {
     title: "skill",
     content: [
-      { text: "photoshop", color: "#C7DBFA" },
-      { text: "illustrator", color: "#FAE5C7" },
-      { text: "indesign", color: "#FAC7DC" },
-      { text: "figma", color: "#D7FAC7" },
-      { text: "html5", color: "#FACDC7" },
-      { text: "css/scss", color: "#C7EAFA" },
-      { text: "react", color: "#80C2F3" },
+      { text: "photoshop" },
+      { text: "illustrator" },
+      { text: "indesign" },
+      { text: "figma" },
+      { text: "html5" },
+      { text: "css/scss" },
+      { text: "react" },
     ],
   },
 ];

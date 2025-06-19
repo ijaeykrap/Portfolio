@@ -28,7 +28,8 @@
     .bottom {
       display: flex;
       justify-content: space-between;
-      span {
+      span,
+      a {
         color: rgba(999, 999, 999, 0.7);
         font-size: 1.125rem;
         transform: translateX(-200%);
@@ -41,6 +42,9 @@
         &:last-child {
           transition: all 0.55s;
         }
+      }
+      a:hover {
+        color: #fff;
       }
       .animate {
         transform: translateX(0);

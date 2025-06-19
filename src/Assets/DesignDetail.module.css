@@ -30,29 +30,52 @@
 }
 .detail .container .intro .textArea .titleArea {
   display: flex;
-  gap: 30px;
-  align-items: center;
-  margin-bottom: 70px;
+  flex-direction: column;
+  margin-bottom: 50px;
+  gap: 20px;
 }
 .detail .container .intro .textArea .titleArea h3 {
   font-size: 2rem;
 }
-.detail .container .intro .textArea .titleArea .link {
+.detail .container .intro .textArea .titleArea .linkWrapper {
+  display: flex;
+  gap: 10px;
+}
+.detail .container .intro .textArea .titleArea .linkWrapper .link {
   font-family: "Steps-Mono";
   font-size: 1.125rem;
   cursor: pointer;
   width: 140px;
-  height: 40px;
+  height: 30px;
   display: inline-block;
-  line-height: 40px;
+  line-height: 30px;
   text-align: center;
   border-radius: 50px;
   background-color: #fff;
   color: #000;
+  transition: all 0.3s;
 }
-.detail .container .intro .textArea .titleArea .link:hover {
+.detail .container .intro .textArea .titleArea .linkWrapper .link:hover {
   background-color: #747474;
   color: #fff;
+}
+.detail .container .intro .textArea .titleArea .linkWrapper .figma {
+  transition: all 0.3s;
+}
+.detail .container .intro .textArea .titleArea .linkWrapper .figma img {
+  height: 50px;
+}
+.detail .container .intro .textArea .titleArea .linkWrapper .figma:hover {
+  transform: scale(1.1);
+}
+.detail .container .intro .textArea .titleArea .linkWrapper .github {
+  transition: all 0.3s;
+}
+.detail .container .intro .textArea .titleArea .linkWrapper .github img {
+  height: 30px;
+}
+.detail .container .intro .textArea .titleArea .linkWrapper .github:hover {
+  transform: scale(1.1);
 }
 .detail .container .intro .textArea .item {
   display: flex;

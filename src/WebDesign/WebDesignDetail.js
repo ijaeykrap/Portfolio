@@ -19,10 +19,15 @@ export default function WebDesignDetail() {
           <div className={style.textArea}>
             <div className={style.titleArea}>
               <h3>{arr.content[0].name}</h3>
-              <div className={style.linkBtn}>
-                <Link to={arr.move} target="_blank" className={style.link}>
-                  move to site
+              <div className={style.linkWrapper}>
+                <Link className={style.github} to={arr.github} target="_blank">
+                  <img src="/img/github.svg" alt="github_logo"></img>
                 </Link>
+                <div className={style.linkBtn}>
+                  <Link to={arr.move} target="_blank" className={style.link}>
+                    move to site
+                  </Link>
+                </div>
               </div>
             </div>
 

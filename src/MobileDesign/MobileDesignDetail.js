@@ -18,6 +18,11 @@ export default function MobileDesignDetail() {
           <div className={style.textArea}>
             <div className={style.titleArea}>
               <h3>{arr.content[0].name}</h3>
+              <div className={style.linkWrapper}>
+                <Link className={style.figma} to={arr.figma} target="_blank">
+                  <img src="/img/figma.png" alt="figma_logo"></img>
+                </Link>
+              </div>
             </div>
 
             <div className={style.itemWrapper}>

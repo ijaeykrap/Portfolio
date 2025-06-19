@@ -28,27 +28,51 @@
 
         .titleArea {
           display: flex;
-          gap: 30px;
-          align-items: center;
-          margin-bottom: 70px;
+          flex-direction: column;
+          margin-bottom: 50px;
+          gap: 20px;
+
           h3 {
             font-size: 2rem;
           }
-          .link {
-            font-family: "Steps-Mono";
-            font-size: 1.125rem;
-            cursor: pointer;
-            width: 140px;
-            height: 40px;
-            display: inline-block;
-            line-height: 40px;
-            text-align: center;
-            border-radius: 50px;
-            background-color: #fff;
-            color: #000;
-            &:hover {
-              background-color: #747474;
-              color: #fff;
+          .linkWrapper {
+            display: flex;
+            gap: 10px;
+            .link {
+              font-family: "Steps-Mono";
+              font-size: 1.125rem;
+              cursor: pointer;
+              width: 140px;
+              height: 30px;
+              display: inline-block;
+              line-height: 30px;
+              text-align: center;
+              border-radius: 50px;
+              background-color: #fff;
+              color: #000;
+              transition: all 0.3s;
+              &:hover {
+                background-color: #747474;
+                color: #fff;
+              }
+            }
+            .figma {
+              transition: all 0.3s;
+              img {
+                height: 50px;
+              }
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+            .github {
+              transition: all 0.3s;
+              img {
+                height: 30px;
+              }
+              &:hover {
+                transform: scale(1.1);
+              }
             }
           }
         }

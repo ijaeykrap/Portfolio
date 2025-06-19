@@ -1,4 +1,5 @@
 import { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import style from "./Main.module.css";
 
@@ -35,7 +36,13 @@ function Main() {
         <div className={style.bottom}>
           <span ref={(el) => (ref.current[1] = el)}>&copy;2025</span>
           <span ref={(el) => (ref.current[2] = el)}>Park Yea Ji</span>
-          <span ref={(el) => (ref.current[3] = el)}>Design & Publishing</span>
+          <Link
+            ref={(el) => (ref.current[3] = el)}
+            to="https://github.com/ijaeykrap/Portfolio"
+            target="_blank"
+          >
+            Move to Git
+          </Link>
         </div>
       </div>
     </section>
