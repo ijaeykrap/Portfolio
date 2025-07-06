@@ -249,13 +249,13 @@ export const MobileDesignInfo = [
         project: "반려동물 증상 기록에 보호자들이 느끼는 어려움 해소",
         goal: "꾸준한 증상과 이를 활용한 효율적이고 정확한 진료",
         user: "언제부터 아팠는지 헷갈려 병원만 가면 말문이 막히는 보호자",
-        job: "리서치, 경쟁사 조사, 디자인 시안 제작",
+        job: "리서치, 디자인 시안 제작",
         type: "팀 프로젝트",
       },
     ],
     img: [
       {
-        src: "../img/mvp.jpg",
+        src: "../img/mvp.png",
         alt: "problem definition process",
       },
     ],
@@ -280,7 +280,7 @@ export const MobileDesignInfo = [
     ],
     img: [
       {
-        src: "../img/ux.jpg",
+        src: "../img/ux.png",
         alt: "setting",
       },
     ],
@@ -338,9 +338,9 @@ export const ResumeInfo = [
   {
     title: "education",
     content: [
-      { year: "2017.03 - 2019.02", text: "한양여자대학교 섬유패션디자인과" },
-      { year: "2019.03 - 2022.02", text: "한양여자대학교 패션디자인학과" },
       { year: "2025.01 - 2025.05", text: "내일배움캠프 UIUX 코스" },
+      { year: "2019.03 - 2022.02", text: "한양여자대학교 패션디자인학과" },
+      { year: "2017.03 - 2019.02", text: "한양여자대학교 섬유패션디자인과" },
     ],
   },
   {
@@ -350,8 +350,8 @@ export const ResumeInfo = [
   {
     title: "License",
     content: [
-      { year: "2024.04", text: "웹디자인 기능사" },
       { year: "2024.08", text: "GA4" },
+      { year: "2024.04", text: "웹디자인 기능사" },
     ],
   },
   {
