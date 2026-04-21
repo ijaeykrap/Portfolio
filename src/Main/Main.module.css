@@ -3,56 +3,56 @@
   src: url("../../public/font/Velvelyne-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
-}
-.home {
-  margin-top: 70px;
-  width: 100%;
-  height: calc(100vh - 70px);
-}
-.home .content {
-  margin: 0 auto;
-  padding: 100px 0 30px 0;
-  width: calc(100vw - 200px);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.home .content .title {
-  font-size: 3.125rem;
-  line-height: 4.6875rem;
-  transform: translateX(-30%);
-  transition: all 0.3s;
-  font-weight: 900;
-}
-.home .content .animate {
-  transform: translateX(0);
-}
-.home .content .bottom {
-  display: flex;
-  justify-content: space-between;
-}
-.home .content .bottom span,
-.home .content .bottom a {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 1.125rem;
-  transform: translateX(-200%);
-}
-.home .content .bottom span:first-child,
-.home .content .bottom a:first-child {
-  transition: all 0.3s;
-}
-.home .content .bottom span:nth-child(2),
-.home .content .bottom a:nth-child(2) {
-  transition: all 0.45s;
-}
-.home .content .bottom span:last-child,
-.home .content .bottom a:last-child {
-  transition: all 0.55s;
-}
-.home .content .bottom a:hover {
-  color: #fff;
-}
-.home .content .bottom .animate {
-  transform: translateX(0);
+  .home {
+    margin-top: 70px;
+    width: 100%;
+    height: calc(100vh - 70px);
+  }
+  .home .content {
+    margin: 0 auto;
+    padding: 100px 0 30px 0;
+    width: calc(100vw - 200px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .home .content .title {
+    font-size: 3.125rem;
+    line-height: 4.6875rem;
+    transform: translateX(-30%);
+    transition: all 0.3s;
+    font-weight: 900;
+  }
+  .home .content .animate {
+    transform: translateX(0);
+  }
+  .home .content .bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  .home .content .bottom span,
+  .home .content .bottom a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.125rem;
+    transform: translateX(-200%);
+  }
+  .home .content .bottom span:first-child,
+  .home .content .bottom a:first-child {
+    transition: all 0.3s;
+  }
+  .home .content .bottom span:nth-child(2),
+  .home .content .bottom a:nth-child(2) {
+    transition: all 0.45s;
+  }
+  .home .content .bottom span:last-child,
+  .home .content .bottom a:last-child {
+    transition: all 0.55s;
+  }
+  .home .content .bottom a:hover {
+    color: #fff;
+  }
+  .home .content .bottom .animate {
+    transform: translateX(0);
+  }
 }/*# sourceMappingURL=Main.module.css.map */

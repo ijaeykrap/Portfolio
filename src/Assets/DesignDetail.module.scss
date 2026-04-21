@@ -1,8 +1,13 @@
 @font-face {
+<<<<<<< HEAD
   font-family: 'vevelyne';
   src: url('../../public/font/Velvelyne-Regular.ttf') format('truetype');
   font-style: normal;
   font-weight: 400;
+=======
+  font-family: "Steps-Mono";
+  src: url("../../public/font/Steps-Mono.otf") format(otf);
+>>>>>>> 7b299ed2546236957dc955c0199b2132b78a48ab
 }
 
 .detail {
@@ -41,7 +46,11 @@
             display: flex;
             gap: 10px;
             .link {
+<<<<<<< HEAD
               font-family: 'vevelyne';
+=======
+              font-family: "Steps-Mono";
+>>>>>>> 7b299ed2546236957dc955c0199b2132b78a48ab
               font-size: 1.125rem;
               cursor: pointer;
               width: 140px;
@@ -96,12 +105,20 @@
           margin-top: 30px;
           text-align: right;
           .list {
+<<<<<<< HEAD
             font-family: 'Pretendard';
+=======
+            font-family: "Pretendard";
+>>>>>>> 7b299ed2546236957dc955c0199b2132b78a48ab
             font-size: 1.25rem;
             position: relative;
             margin-right: 30px;
             &:after {
+<<<<<<< HEAD
               content: '';
+=======
+              content: "";
+>>>>>>> 7b299ed2546236957dc955c0199b2132b78a48ab
               background-image: url(../../public/img/logo-arrow.svg);
               width: 25px;
               height: 20px;
