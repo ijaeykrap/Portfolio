@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "vevelyne";
+  src: url("../../public/font/Velvelyne-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+.container {
+  width: 100%;
+  height: auto;
+  background-color: #000;
+}
+.container .inner {
+  width: 83.12%;
+  margin: 0 auto;
+}
+.container .inner .list {
+  margin: 150px 0 200px 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 32.33%);
+  /* grid-template-rows: repeat(2, 475px); */
+  -moz-column-gap: 1.5%;
+       column-gap: 1.5%;
+  row-gap: 70px;
+}
+.container .inner .list li:hover {
+  transform: scale(1.02);
+  transition: all 0.3s;
+}
+.container .inner .list li a .img {
+  width: 100%;
+  height: 344px;
+  background-size: cover;
+  background-position: center;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.container .inner .list li a .titleArea {
+  color: #fff;
+  width: 100%;
+  height: 131px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.container .inner .list li a .titleArea .title {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-size: 6rem;
+}
+.container .inner .list li a .titleArea .descrip {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 20px 10px 0 0;
+}
+.container .inner .list li a .titleArea .descrip span {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.container .inner .list li a .titleArea .descrip .duration {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 100;
+}/*# sourceMappingURL=List.module.css.map */

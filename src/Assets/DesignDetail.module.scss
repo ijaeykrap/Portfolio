@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'vevelyne';
+  src: url('../../public/font/Velvelyne-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+.detail {
+  width: 100%;
+  height: 100%;
+  .container {
+    width: 83.12%;
+    height: auto;
+    margin: 70px auto 0 auto;
+    .intro {
+      margin-top: 150px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 80px;
+      .thumbArea {
+        width: 50%;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .textArea {
+        width: 50%;
+
+        .titleArea {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 50px;
+          gap: 20px;
+
+          h3 {
+            font-size: 2rem;
+          }
+          .linkWrapper {
+            display: flex;
+            gap: 10px;
+            .link {
+              font-family: 'vevelyne';
+              font-size: 1.125rem;
+              cursor: pointer;
+              width: 140px;
+              height: 30px;
+              display: inline-block;
+              line-height: 30px;
+              text-align: center;
+              border-radius: 50px;
+              background-color: #fff;
+              color: #000;
+              transition: all 0.3s;
+              &:hover {
+                background-color: #747474;
+                color: #fff;
+              }
+            }
+            .figma {
+              transition: all 0.3s;
+              img {
+                height: 50px;
+              }
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+            .github {
+              transition: all 0.3s;
+              img {
+                height: 30px;
+              }
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+          }
+        }
+
+        .item {
+          display: flex;
+          justify-content: space-between;
+          span {
+            font-size: 1.125rem;
+          }
+        }
+        .line {
+          width: 100%;
+          background-color: #fff;
+          height: 0.7px;
+          margin: 8px 0 8px 0;
+        }
+        .listBtn {
+          margin-top: 30px;
+          text-align: right;
+          .list {
+            font-family: 'Pretendard';
+            font-size: 1.25rem;
+            position: relative;
+            margin-right: 30px;
+            &:after {
+              content: '';
+              background-image: url(../../public/img/logo-arrow.svg);
+              width: 25px;
+              height: 20px;
+              background-size: contain;
+              background-position: center;
+              background-repeat: no-repeat;
+              display: block;
+              position: absolute;
+              top: 50%;
+              left: 110%;
+              transform: translateY(-50%);
+              transition: all 0.3s;
+            }
+            &:hover::after {
+              left: 130%;
+            }
+          }
+        }
+      }
+    }
+    .imgWrapper {
+      margin-top: 100px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .img {
+        width: 100%;
+        height: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        object-fit: contain;
+      }
+    }
+  }
+}
