@@ -1,9 +1,9 @@
-import { Outlet } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+import { Outlet } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
-import Header from "./Assets/Header";
-import Footer from "./Assets/Footer";
-import ScrollBtn from "./Assets/ScrollBtn";
+import Header from './Assets/Header';
+import Footer from './Assets/Footer';
+import ScrollBtn from './Assets/ScrollBtn';
 
 export default function RootLayout() {
   const location = useLocation();
@@ -11,8 +11,8 @@ export default function RootLayout() {
     <>
       <Header />
       <Outlet />
-      {location.pathname === "/" ? null : <ScrollBtn />}
-      {location.pathname === "/" ? null : <Footer />}
+      {location.pathname === '/' ? null : <ScrollBtn />}
+      {location.pathname === '/' ? null : <Footer />}
     </>
   );
 }
